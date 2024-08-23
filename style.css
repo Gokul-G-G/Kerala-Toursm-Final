@@ -10,3 +10,17 @@
 body{
   font-family: "Roboto", system-ui;
 }
+.active{
+  color: #074c2c !important;
+  border-bottom: 1px solid #074c2c;
+}
+ul li>a{
+  color: #18af69 !important;
+  font-weight: 700 !important;
+}
+ul li>a:hover{
+  color: #074c2c !important;
+  border-bottom: 1px solid #074c2c;
+}
+
+/* Main Section */
