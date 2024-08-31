@@ -63,6 +63,7 @@ main p{
   border-radius: 10px;
   font-weight: 700;
 }
+
 @media screen and (max-width:768px){
   .form-container{
     display: none;
@@ -72,7 +73,10 @@ main p{
     margin-bottom: 80px;
   }
 }
-
+#districts{
+  background-color: #b6dbca;
+  padding: 2rem;
+}
 .card-img{
     display: flex;
     width: auto;
@@ -85,3 +89,60 @@ main p{
 .card-img img:hover{
     transform: scale(1.05);
 }
+.carousel-container{
+    width: auto;
+    height:180px;
+    overflow:hidden;
+}
+#destinations .card-body{
+  
+
+  & .card-title{
+    color: #18af69;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+}
+#destinations{
+  padding: 2rem;
+}
+/* ===============
+footer
+==================
+ */
+
+ footer{
+   width: 100vw;
+   height: 30vh;
+   background-color:#b6dbca;
+   display: flex;
+   justify-content: space-evenly;
+   padding: 0 10px;
+ }
+
+ .footer-box{
+   display: flex;
+   flex-direction: column;
+   line-height: 2em;
+ }
+ .footer-box img{
+   padding-top: 10px;
+ }
+ .footer-box i{
+   padding: 0 5px;
+ }
+ .end-content{
+   width: 100vw;
+   text-align: center;
+ }
+ .end-content p{
+   color: black;
+ }
+ footer a{
+  text-decoration: none;
+ }
+ @media screen and (max-width:768px){
+  footer{
+    justify-content: space-between;
+  }
+ }
