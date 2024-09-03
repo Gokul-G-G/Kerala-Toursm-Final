@@ -1,237 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kerala Tourism</title>
-    <!-- Bootstrap link -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-    <!-- Font Awesome link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <!-- External css link -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Header section -->
-    <header class="sticky-top">
-      <div class="container-fluid p-0 border-bottom shadow-sm">
-        <nav
-          class="navbar navbar-expand-lg bg-white"
-          style="background-color: #e3f2fd">
-          <div class="container-fluid">
-            <a class="navbar-brand ms-4" href="#"
-              ><img
-                src="https://logos-download.com/wp-content/uploads/2021/01/Kerala_Tourism_Logo.png"
-                style="width: 100px"
-                alt="Kerala Tourism logo"
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item me-4">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item me-4">
-                  <a class="nav-link" href="#about">About Us</a>
-                </li>
-                <li class="nav-item me-4 dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#districts"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Districts
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#districts">Alappuzha</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#districts">Ernakulam</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#districts">Idukki</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#districts">Kannur</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#districts">Kasaragod</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#districts">Kollam</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#districts">Kottayam</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#districts">Kozhikode</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#districts">Malappuram</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#districts">Palakkad</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Pathanamthitta</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Thiruvananthapuram</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Thrissur</a></li>
-                    <li><a class="dropdown-item" href="#">Wayanad</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item me-4 dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Top Destinations
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Back Waters</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Wildlife Sancturies</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Waterfalls</a></li>
-                    <li><a class="dropdown-item" href="#">Hill Stations</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item me-4">
-                  <a class="nav-link" href="#">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerala tourism</title>
+  <!-- font awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+">
+<!-- External style -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+   <header>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <a class="navbar-brand" href="#"><img src="https://logos-download.com/wp-content/uploads/2021/01/Kerala_Tourism_Logo.png" alt=""></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#districts">Districts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#destinations">top destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">contact us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="login">
+        <input class="form-control me-2" type="email" placeholder="Email" aria-label="email" required>
+        <input class="form-control me-2" type="password" placeholder="Password" aria-label="password" required>
+        <button class="btn btn-success" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</header>
+<!-- Hero section -->
+ <section id="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="hero-title">COME AND ENJOY OUR CULTURE</h1>
+        <p>Kerala, often referred to as “God’s Own Country,” is a premier tourist destination in India, celebrated for its breathtaking natural beauty and rich cultural heritage.</p>
+        <button class="btn btn-hero btn-outline-light">Explore More</button>
+        <button class="btn btn-hero btn-success">Sign up</button>
       </div>
-    </header>
-    <!-- Hero Section -->
-    <main>
-      <div class="container container-hero">
-        <div class="row">
-          <div
-            class="col-12 col-md-6 d-flex-column justify-content-md-center align-self-md-center mt-4">
-            <h1>Come and enjoy our Culture</h1>
-            <p>
-              Kerala, often referred to as “God’s Own Country,” is a premier
-              tourist destination in India, celebrated for its breathtaking
-              natural beauty and rich cultural heritage.
-            </p>
-            <button type="button" class="btn btn-outline-success btn-main">
-              Learn More
-            </button>
-          </div>
-          <div
-            class="col-12 col-md-6 d-flex justify-content-md-center align-self-md-center">
-            <div class="form-container">
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Email address</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp" />
-                  <div id="emailHelp" class="form-text text-white">
-                    We'll never share your email with anyone else.
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"
-                    >Password</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1" />
-                </div>
-                <div class="mb-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1" />
-                  <label class="form-check-label" for="exampleCheck1"
-                    >Check me to login</label
-                  >
-                </div>
-                <button type="submit" class="btn btn-primary">Login</button>
-              </form>
-            </div>
-          </div>
+      <div class="col-lg-6 align-self-center">
+        <div class="container">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner ">
+    <div class="carousel-item active ">
+      <img src="https://www.keralatourism.org/images/banner/medium_desktop/heli-1920.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.keralatourism.org/images/banner/medium_desktop/escape-to-the-hills-1920x650_(2).jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.keralatourism.org/images/banner/medium_desktop/banner_malarickal_1920.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.keralatourism.org/images/banner/medium_desktop/tvm1-1920x650_(1).jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.keralatourism.org/images/banner/medium_desktop/ashtamudi_lake.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
         </div>
       </div>
-    </main>
-    <!-- Section for About -->
-    <section id="about">
-      <h2 class="text-center mt-3 mb-3">
-        <u>ABOUT <span>US</span></u>
-      </h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 d-flex align-self-md-center">
-            <img
-              src="https://gokul-g-g.github.io/Tourism/images/kerala.png"
-              style="width: 20rem"
-              alt="kerala map" />
-          </div>
-          <div class="col-12 col-md-6 d-flex align-self-md-center">
-            <p>
-              Kerala, often referred to as “God’s Own Country,” is a premier
-              tourist destination in India, celebrated for its breathtaking
-              natural beauty and rich cultural heritage. The state offers a
-              diverse range of attractions, from the serene backwaters of
-              Alappuzha and Kumarakom, where visitors can enjoy tranquil
-              houseboat cruises, to the lush green hills of Munnar and Wayanad,
-              known for their tea plantations and cool climate. Kerala’s
-              coastline along the Arabian Sea features pristine beaches like
-              Kovalam and Varkala, perfect for relaxation and water activities.
-              The state’s vibrant culture is showcased through classical dance
-              forms such as Kathakali and Mohiniyattam, and festivals like Onam
-              and Thrissur Pooram. Additionally, Kerala is renowned for its
-              Ayurvedic wellness treatments, attracting visitors seeking
-              rejuvenation and health. Eco-tourism is also a significant aspect,
-              with wildlife sanctuaries like Periyar offering opportunities for
-              trekking and wildlife safaris. The unique blend of natural beauty,
-              cultural richness, and warm hospitality makes Kerala a must-visit
-              destination for travelers.
-            </p>
-          </div>
+    </div>
+  </div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,32L48,64C96,96,192,160,288,197.3C384,235,480,245,576,208C672,171,768,85,864,85.3C960,85,1056,171,1152,170.7C1248,171,1344,85,1392,42.7L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+ </section>
+
+ <!-- About Us section -->
+  <section id="about">
+    <div class="container text-center">
+      <h3>About us</h3>
+      <div class="row pt-4">
+        <div class="col-md-6">
+          <p>Kerala, often referred to as <span class="highlight"> “God’s Own Country,” </span>is a premier tourist destination in India, celebrated for its breathtaking natural beauty and rich cultural heritage. The state offers a diverse range of attractions, from the serene backwaters of Alappuzha and Kumarakom, where visitors can enjoy tranquil houseboat cruises, to the lush green hills of Munnar and Wayanad, known for their tea plantations and cool climate. Kerala’s coastline along the Arabian Sea features pristine beaches like Kovalam and Varkala, perfect for relaxation and water activities. The state’s vibrant culture is showcased through classical dance forms such as Kathakali and Mohiniyattam, and festivals like Onam and Thrissur Pooram. Additionally, Kerala is renowned for its Ayurvedic wellness treatments, attracting visitors seeking rejuvenation and health. Eco-tourism is also a significant aspect, with wildlife sanctuaries like Periyar offering opportunities for trekking and wildlife safaris. The unique blend of natural beauty, cultural richness, and warm hospitality makes Kerala a must-visit destination for travelers.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://gokul-g-g.github.io/Tourism/images/kerala.png" style="width: 18rem;" alt="">
         </div>
       </div>
-    </section>
-    <!-- Section for Districts -->
-    <section id="districts">
-      <h2 class="text-center mb-3">
-        <u>DISTR<span>ICTS</span></u>
-      </h2>
+      <button type="button" class="btn btn-primary mt-3">Learn more</button>
+    </div>
+  </section>
+  <!-- Districts Section -->
+   <section id="districts">
+      <h3>districts</h3>
       <div class="container">
-        <div class="row g-3">
+        <div class="row g-3 pt-3">
           <div class="col-6 col-md-4 col-lg-2">
             <div class="card">
               <div class="card-img">
@@ -416,204 +299,82 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- Destinations -->
+   </section>
+   <!-- Top Destinations -->
     <section id="destinations">
-      <h2 class="text-center m-3">
-        <u>TOP<span> DESTINATIONS</span></u>
-      </h2>
-      <div class="container">
-        <div class="row justify-content-center g-3">
-          <div class="col-12 col-md-6 col-lg-3">
-          <!-- card backwaters -->
-          <div class="card" style="width: 18rem;">
-            <div class="carousel-container">
-            <!-- carousel -->
-            <div
-              id="carouselExampleAutoplaying"
-              class="carousel slide"
-              data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://www.muchbetteradventures.com/magazine/content/images/2022/08/kerala-backwaters.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://th.bing.com/th/id/R.544b10a9cf71d3d2d57756fffdcd78e0?rik=ZYcbATTS6b11Vg&riu=http%3a%2f%2fblog.thomascook.in%2fwp-content%2fuploads%2f2014%2f01%2fAlleppey-Backwaters.jpg&ehk=173lZKChTtBcSnEE5%2bJx0mzAP2EUUPRdZ%2feHoHWVzDE%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://www.tripsavvy.com/thmb/eCWPvoGI5N6yIlOmwSpwFueeChU=/2120x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-491280712-1cdfa38202154daa9bb4075d8c54c67f.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://fthmb.tqn.com/eN8UsgBHlQFlUz-F-EDxRaf1Y5s=/2121x1414/filters:fill(auto,1)/GettyImages-640355133-5947dd743df78c537b39a909.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://www.tripsavvy.com/thmb/ciIbOxlWIo7usk4SY9FSp8F0yhU=/2121x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-5434655031-5947df5e3df78c537b39b09d.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-            </div>
-            </div>
-            <!-- carousel end -->
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center">Back Waters</h5>
-              <p class="card-text">
-                Kerala's backwaters, a tranquil network of waterways, lakes, and canals, offer serene boat rides amidst lush green landscapes naturally.
-              </p>
-              <a href="#" class="btn btn-primary">Learn More...</a>
-            </div>
+      <div class="container-fluid">
+        <h3>Top destinations</h3>
+        <div class="images">
+          <div class="images-slide">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-kollam-header-675x430.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-alleppey.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-thrissur.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-kozhikhode.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-kochi.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-munnar.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-vagamon.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-wayanad.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-thekkady.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-ponmudi-1.jpg" alt="">
+            
           </div>
-          <!-- card backwater end-->
-        </div>
-          <div class="col-12 col-md-6 col-lg-3">
-          <!-- card wildlife-->
-          <div class="card" style="width: 18rem;">
-            <div class="carousel-container">
-            <!-- carousel -->
-            <div
-              id="carouselExampleAutoplaying"
-              class="carousel slide"
-              data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://th.bing.com/th/id/OIP.zMA88xZ8fhV8pmOcVTlv0QHaFj?rs=1&pid=ImgDetMain" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://i1.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/07/Wildlife-Sanctuaries-National-Parks-Kerala.jpg?resize=768%2C576&ssl=1" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://th.bing.com/th/id/OIP.9KFWGodYV-RrXfBMyrcZhAHaFj?rs=1&pid=ImgDetMain" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/08/Untitled-design-153.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://www.travelogyindia.com/images/kerala/chinnar-wildlife-sanctuary.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-            </div>
-            </div>
-            <!-- carousel end -->
-            <div class="card-body">
-              <h5 class="card-title fw-bold  text-center">wildlife sancturies</h5>
-              <p class="card-text">
-                Kerala's wildlife sanctuaries, like Periyar and Parambikulam, protect elephants, tigers, and rare species amidst lush forests and grasslands naturally.
-              </p>
-              <a href="#" class="btn btn-primary">Learn More...</a>
-            </div>
+          <div class="images-slide">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-kollam-header-675x430.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-alleppey.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-thrissur.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-kozhikhode.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-kochi.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-munnar.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-vagamon.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-wayanad.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-thekkady.jpg" alt="">
+            <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/kerala-in-october-ponmudi-1.jpg" alt="">
           </div>
-          <!-- card wildlife end-->
-        </div>
-          <div class="col-12 col-md-6 col-lg-3">
-          <!-- card waterfalls-->
-          <div class="card" style="width: 18rem;">
-            <div class="carousel-container">
-            <!-- carousel -->
-            <div
-              id="carouselExampleAutoplaying"
-              class="carousel slide"
-              data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://3.bp.blogspot.com/-CgxqzyvwPN4/VaFsCtIrycI/AAAAAAAAJHc/lA3SrF-pAAs/s1600/ATHIRAPALLY-FALLS.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://www.ghumindiaghum.com/blog/wp-content/uploads/2020/08/Thommankuthu-Falls.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://www.ghumindiaghum.com/blog/wp-content/uploads/2020/08/Cheeyappara-Waterfalls.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://i.pinimg.com/originals/07/75/3d/07753da24002abc1da64cb3568ba742a.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://www.ghumindiaghum.com/blog/wp-content/uploads/2020/08/vazhachal_waterfall_tour.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-            </div>
-            </div>
-            <!-- carousel end -->
-            <div class="card-body">
-              <h5 class="card-title fw-bold  text-center">waterfalls</h5>
-              <p class="card-text">
-                Kerala's waterfalls, like Athirappilly and Vazhachal, cascade down rocky cliffs, surrounded by lush green forests and serene natural beauty.
-              </p>
-              <a href="#" class="btn btn-primary">Learn More...</a>
-            </div>
-          </div>
-          <!-- card waterfalls end-->
-        </div>
-          <div class="col-12 col-md-6 col-lg-3">
-          <!-- card hill stations -->
-          <div class="card" style="width: 18rem;">
-            <div class="carousel-container">
-            <!-- carousel -->
-            <div
-              id="carouselExampleAutoplaying"
-              class="carousel slide"
-              data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://th.bing.com/th/id/R.f7160564ef417c630ce0c1944c40b1d2?rik=a3j1GUxOK7ZRww&riu=http%3a%2f%2fwww.thecbcnews.com%2fwp-content%2fuploads%2f2019%2f10%2fcbc-news.jpg&ehk=uCBK2VN3dIPWLEikQvDla4YXUEBFlwDCegKx%2bbQTnMg%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://www.keralabackwater.com/blog/wp-content/uploads/2014/01/Kerala-Hill-Stations.jpeg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://pyt-blogs.imgix.net/2020/06/srinivasan-venkataraman-9NmYCjfBGp0-unsplash-1-scaled.jpg?auto=format&ixlib=php-3.3.0" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/munnar-image.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="https://irisholidays.com/keralatourism/wp-content/uploads/2020/01/hillstations-in-kerala.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-            </div>
-            </div>
-            <!-- carousel end -->
-            <div class="card-body">
-              <h5 class="card-title fw-bold  text-center">hill stations</h5>
-              <p class="card-text">
-                Kerala's hill stations, like Munnar and Wayanad, offer breathtaking scenery, rolling tea gardens, and cool climate amidst lush green mountains.
-              </p>
-              <a href="#" class="btn btn-primary">Learn More...</a>
-            </div>
-          </div>
-          <!-- card end-->
         </div>
       </div>
     </section>
-    <footer>
-        <div class="footer-box">
-            <a href="#" class="footer-logo">
-                <img src="https://logos-download.com/wp-content/uploads/2021/01/Kerala_Tourism_Logo.png" alt="logo" width="50px" height="50px">
-            </a>
-            <p>Enjoy your Tour<br> with kerala tourism</p>
-            <div class="social-link">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-        </div>  
-        <div class="footer-box">
-            <h3>Tour</h3>
-            <a href="#">top destinations</a>
-            <a href="#">help center</a>
-            <a href="#">guide book</a>
-            <a href="#">app directory</a>
+    <!-- Social media section -->
+     <section id="social-media">
+      <div class="container text-center">
+        <p>Connect with us</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
         </div>
-        <div class="footer-box">
-            <h3>get app</h3>
-            <a href="#">app store</a>
-            <a href="#">play store</a>
-            <a href="#">web app</a>
-            <a href="#">help center</a>
-        </div>
-     </footer>
-     <div class="end-content">
-        <p>©&nbsp;Copyright Gokul Gopi 2024</p>
-     </div>
+      </div>
+     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+     <!-- footer -->
+      <footer id="contact">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,64L26.7,58.7C53.3,53,107,43,160,58.7C213.3,75,267,117,320,144C373.3,171,427,181,480,176C533.3,171,587,149,640,154.7C693.3,160,747,192,800,213.3C853.3,235,907,245,960,224C1013.3,203,1067,149,1120,138.7C1173.3,128,1227,160,1280,160C1333.3,160,1387,128,1413,112L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
+     
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-box">
+            <img src="https://logos-download.com/wp-content/uploads/2021/01/Kerala_Tourism_Logo.png"  alt="">
+            <p>Kerala, often referred to as “God’s Own Country,” is a premier tourist destination in India, celebrated for its breathtaking natural beauty and rich cultural heritage.</p>
+          </div>
+          <div class="col-md-4 footer-box">
+            <p><b>CONTACT US</b></p>
+            <p><i class="fa-solid fa-location-dot"></i> Department of Tourism, Kerala <br>,park view,Thiruvanathapuram</p>
+            <p><i class="fa-solid fa-phone"></i> +91 471 2321132,+91 471 2322279</p>
+            <p><i class="fa-solid fa-envelope"></i> info@keralatourism.org</p>
+        </div>
+        <div class="col-md-4 footer-box">
+          <p><b>Subscribe Our Newsletter</b></p>
+          <P>Get notified Kerala Tourism events and activities</P>
+          <input type="email" class="form-control" placeholder="Your Email" >
+          <button type="button" class="btn btn-primary">SUBSCRIBE</button>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center">©&nbsp;Copyright Gokul Gopi 2024</p>
+       </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+"></script>
+<script src="script.js"></script>
+</body>
 </html>

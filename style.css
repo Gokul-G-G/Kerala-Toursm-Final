@@ -1,148 +1,241 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
-
-*,
-*:after,
-*:before {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: "Roboto", system-ui;
+h3 {
+  text-align: center;
+  text-transform: uppercase;
 }
-.active {
-  color: #074c2c !important;
-  border-bottom: 1px solid #074c2c;
+h3::before {
+  content: "";
+  background-color: rgb(48, 191, 248);
+  height: 3px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(40px);
 }
-ul li > a {
-  color: #18af69 !important;
-  font-weight: 700 !important;
+h3::after {
+  content: "";
+  background-color: rgb(48, 191, 248);
+  height: 5px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(0.1688rem);
 }
-ul li > a:hover {
-  color: #074c2c !important;
-  border-bottom: 1px solid #074c2c;
+/* ##############
+Header Section
+################# */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-span{
-  color: #18af69;
+.navbar {
+  background-image: linear-gradient(
+    to right,
+    rgb(48, 191, 248),
+    rgb(5, 82, 113)
+  );
+  padding: 0 !important;
+}
+.navbar-brand img {
+  height: 50px;
+}
+.navbar-nav li {
+  padding: 0 10px;
+}
+.navbar-nav li a {
+  color: #fff !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.navbar-nav li a:hover {
+  color: #555 !important;
+}
+.fa-bars {
+  color: #fff;
+  font-size: 30px !important;
+}
+.navbar-toggler {
+  outline: none !important;
+  border: none !important;
 }
 
-/* Main Section */
-main {
-  width: 100%;
-  height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/hero.jpg) center/cover no-repeat fixed;
+/* ##############
+Hero Section
+################# */
+
+#hero {
+  background-image: linear-gradient(
+    to right,
+    rgb(48, 191, 248),
+    rgb(5, 82, 113)
+  );
+  padding: 0 !important;
+  color: #fff;
+  padding-top: 5%;
+}
+.hero-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+.btn-hero {
+  margin: 20px 10px 30px 0;
+}
+.carousel-item img {
+  object-fit: cover !important;
+}
+/* ##############
+About Section
+################# */
+
+#about {
+  padding: 30px 0;
+}
+.highlight {
+  color: rgb(48, 191, 248);
+  font-weight: 600;
+}
+#about .btn-primary {
+  box-shadow: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to left,
+    rgb(48, 191, 248),
+    rgb(5, 82, 113)
+  );
+}
+/* ##############
+Districts Section
+################# */
+
+#districts {
+  padding: 30px 0;
+}
+.card-img {
+  display: flex;
+  width: auto;
+  height: 10.5em;
+  overflow: hidden;
+}
+.card-img img {
+  transition: all 0.3s;
+}
+.card-text {
+  font-size: 0.75rem;
+}
+.card-img img:hover {
+  transform: scale(1.05);
+}
+
+/* ##############
+Destinations
+################# */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.images {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
   position: relative;
 }
-main h1{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 900;
-  color:#18af69;
-  font-size:3em;
-  -webkit-text-stroke: 0.5px white;
+.images:hover .images-slide {
+  animation-play-state: paused;
 }
-main p{
-  font-weight: 700;
-  color: white;
-  font-size: 1em;
-  letter-spacing: 1px;
-  line-height:30px;
+.images-slide {
+  display: inline-block;
+  animation: 30s slide infinite linear;
 }
-.form-container{
-  max-width: 300px;
-  border: 2px solid #18af69;
-  border-radius: 10px;
+.images-slide img {
+  height: 200px;
+  margin: 0 40px;
+}
+
+/* ##############
+Social media
+################# */
+#social-media {
+  padding: 100px 0;
+}
+#social-media p {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.social-icons i {
+  font-size: 2.5rem;
+  margin-right: 10px;
+  transition: 0.5s;
+  color: rgb(5, 82, 113);
+}
+.social-icons a:hover i {
+  transform: translateY(-10px);
+}
+
+/* ##############
+Footer
+################# */
+
+footer {
+  background-image: linear-gradient(
+    to right,
+    rgb(48, 191, 248),
+    rgb(5, 82, 113)
+  );
+  color: #fff;
+}
+.footer-box {
   padding: 20px;
-  color: white;
-  margin-top: 20px;
-  max-width: 400px;
 }
-.btn-main{
-  padding: 1rem 3rem;
-  margin-left: 100px;
-  border-radius: 10px;
-  font-weight: 700;
+.footer-box img {
+  width: 120px;
+  margin-bottom: 20px;
 }
-
-@media screen and (max-width:768px){
-  .form-container{
-    display: none;
-  }
-  .container-hero .row{
-    padding-top: 100px;
-    margin-bottom: 80px;
-  }
+.footer-box i {
+  margin-right: 8px;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgb(48, 191, 248),
+    rgb(5, 82, 113)
+  );
 }
-#districts{
-  background-color: #b6dbca;
-  padding: 2rem;
+.footer-box .form-control {
+  box-shadow: none !important;
+  border: none;
+  border-radius: 0;
+  margin-top: 25px;
+  max-width: 250px;
 }
-.card-img{
-    display: flex;
-    width: auto;
-    height: 10.5em;
-    overflow: hidden;
+.footer-box .btn-primary {
+  box-shadow: none !important;
+  border: none;
+  border-radius: 0;
+  margin-top: 30px;
+  background-image: linear-gradient(
+    to right,
+    rgb(48, 191, 248),
+    rgb(5, 82, 113)
+  );
 }
-.card-img img{
-    transition: all 0.3s;
-}
-.card-img img:hover{
-    transform: scale(1.05);
-}
-.carousel-container{
-    width: auto;
-    height:180px;
-    overflow:hidden;
-}
-#destinations .card-body{
-  
-
-  & .card-title{
-    color: #18af69;
-    text-decoration: underline;
-    text-transform: uppercase;
-  }
-}
-#destinations{
-  padding: 2rem;
-}
-/* ===============
-footer
-==================
- */
-
- footer{
-   width: 100vw;
-   height: 30vh;
-   background-color:#b6dbca;
-   display: flex;
-   justify-content: space-evenly;
-   padding: 0 10px;
- }
-
- .footer-box{
-   display: flex;
-   flex-direction: column;
-   line-height: 2em;
- }
- .footer-box img{
-   padding-top: 10px;
- }
- .footer-box i{
-   padding: 0 5px;
- }
- .end-content{
-   width: 100vw;
-   text-align: center;
- }
- .end-content p{
-   color: black;
- }
- footer a{
-  text-decoration: none;
- }
- @media screen and (max-width:768px){
-  footer{
-    justify-content: space-between;
-  }
- }
